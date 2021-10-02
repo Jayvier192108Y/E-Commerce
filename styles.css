@@ -1,0 +1,326 @@
+* {
+  box-sizing: border-box;
+  font-family: Raleway;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Styling Logo */
+label.logo {
+  color: rgb(206, 24, 24);
+  font-size: 35px;
+  line-height: 60px;
+  padding: 0 25px;
+  font-weight: bold;
+  font-family: fantasy;
+  float: left;
+  padding: 0 5%;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: table;
+}
+
+.nav ul {
+  margin: 0;
+}
+
+.nav a {
+  padding: 0.5em;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  float: right;
+}
+/* Style the navigation bar */
+.main-nav {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: lighter;
+  border-bottom: 0px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+  background-color: #333;
+  overflow: hidden;
+}
+.main-nav li {
+  padding: 0 5%;
+}
+/* Current/active navbar link */
+.active {
+  background-color: #1b9740;
+}
+/* Navbar links on mouse-over */
+.nav a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.container img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+}
+/*Button*/
+.btn-primary {
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  background-color: #0a0a0a;
+  font-size: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: antiquewhite;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.btn-purchase {
+  font-size: large;
+  margin: auto;
+  padding: 10px;
+  background-color: red;
+}
+.btn-primary:hover {
+  background-color: rgb(70, 69, 68);
+  box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.btn-danger {
+  color: white;
+  background-color: #eb5757;
+  border: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+}
+.btn-danger:hover {
+  background-color: #cc4c4c;
+}
+.container-2 {
+  width: 80%;
+  margin: auto;
+}
+
+.section-header {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.tour-row {
+  border-bottom: 1px solid black;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.tour-row:last-child {
+  border: none;
+}
+
+.tour-item {
+  display: inline-block;
+  padding-right: 0.5em;
+}
+
+.tour-date {
+  color: #555;
+  width: 11%;
+  font-weight: bold;
+}
+
+.tour-city {
+  width: 24%;
+}
+
+.tour-arena {
+  width: 42%;
+}
+
+.tour-btn {
+  max-width: 19%;
+}
+
+.shop-item {
+  margin: 30px;
+}
+
+.shop-item-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.shop-item-image {
+  height: 250px;
+}
+
+.shop-item-details {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.shop-item-price {
+  flex-grow: 1;
+  color: #333;
+}
+
+.shop-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cart-header {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #333;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 45%;
+}
+
+.cart-price {
+  width: 20%;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.cart-quantity {
+  width: 35%;
+}
+
+.cart-item-title {
+  color: #333;
+  margin-left: 0.5em;
+  font-size: 1.2em;
+}
+
+.cart-item-image {
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #56ccf2;
+  background-color: #eee;
+  color: #333;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+
+.cart-row:last-child {
+  border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+  border: none;
+}
+
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  margin-right: 20px;
+}
+
+.cart-total-price {
+  color: #333;
+  font-size: 1.1em;
+}
+
+/*Footer*/
+
+.classic {
+  color: rgba(255, 255, 255, 0.8);
+  background: #2d3246;
+  height: 150px;
+  bottom: 0;
+  position: relative;
+}
+.contact-list a {
+  color: white;
+  font-style: italic;
+}
+footer {
+  width: 100%;
+}
+.nav-list {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+  font-size: 13px;
+  color: white;
+}
+.nav-list a {
+  color: white;
+  font-size: 15px;
+}
+.nav-list a:hover,
+.fa-instagram:hover,
+.fa-facebook-f:hover,
+.fa-linkedin:hover,
+.fa-twitter:hover {
+  background-color: rgb(37, 33, 34);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
+  color: rgb(233, 80, 80);
+}
+.fa-instagram,
+.fa-facebook-f,
+.fa-linkedin,
+.fa-twitter {
+  color: wheat;
+}
+.con-footer {
+  display: flex;
+  justify-content: space-around;
+}

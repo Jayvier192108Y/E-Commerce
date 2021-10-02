@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>E-COMMERCE | Store</title>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="description" content="This is the description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="store.js" async></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-nav nav">
+        <label class="logo">E-Commerce</label>
+        <ul>
+          <li>
+            <a href=""><i class="fa fa-fw fa-home"></i> HOME</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-fw fa-user"></i> LOGIN</a>
+          </li>
+          <li>
+            <a class="active" href="#"
+              ><i><ion-icon name="storefront-outline"></ion-icon></i> STORE</a
+            >
+          </li>
+          <li class='cart'>
+            <a href="#"><i class="fa fa-shopping-cart"></i> CART <span>0</span> </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="shop-items">
+        <div class="shop-item">
+          <span class="shop-item-title">HERSCHEL SUPPLY CO. RETREAT BACKPACK</span>
+          <img class="shop-item-image" src="data:image/jpeg;base64,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"
+          alt="HERSCHEL SUPPLY CO. RETREAT BACKPACK " />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$109.95</span>
+            <button class="btn btn-primary shop-item-button" type="button">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Nalgene Wide Mouth Bottle, 32 Oz</span>
+          <img class="shop-item-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNk1BXzpGzn-t8FvnMQCFWh3QB3ub7pT0KOw&usqp=CAU"
+          alt="32 Oz capacity bottle" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$19.95</span>
+            <button class="btn btn-primary shop-item-button" type="button">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Scented Candles: White Barn</span>
+          <img class="shop-item-image" src="https://cdn.luxe.digital/media/2020/06/27161720/best-scented-candles-bath-body-works-home-fragrance-luxe-digital%402x.jpg"
+          alt="candles with scent and essential oil" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$29.95</span>
+            <button class="btn btn-primary shop-item-button" type="button">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Denim Jacket</span>
+          <img class="shop-item-image" src="https://cache.mrporter.com/variants/images/10375442618850077/in/w1200_q80.jpg"
+          alt="denim jacket for men"/>
+          <div class="shop-item-details">
+            <span class="shop-item-price">$388.00</span>
+            <button class="btn btn-primary shop-item-button" type="button">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Wave Bucket Hat</span>
+            <img class="shop-item-image" src="https://cdn.shopify.com/s/files/1/1582/4359/products/WaveBucketHatBlack1.jpg?v=1539734501"
+            alt="free-size black bucket hat" />
+            <div class="shop-item-details">
+              <span class="shop-item-price">$19.99</span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+      </div>
+    </section>
+    
+
+
+    <section class="container-2">
+      <h2 class="section-header">CART</h2>
+      <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">$0</span>
+      </div>
+      <button class="btn btn-primary btn-purchase" type="button">
+        PURCHASE
+      </button>
+    </section>
+
+
+    <footer class="classic">
+        <div class="con-footer">
+          <div class="box-1">
+            <a class="brand" href="home.html"
+              ><label class="logo">E-Commerce</label></a
+            >
+          </div>
+          <div class="box-2">
+            <p>
+              We are e-commerce platforms that sells items online at a reasonable
+              price.
+            </p>
+            <!-- Rights-->
+            <p class="rights">
+              <span>© </span><span class="copyright-year">2021</span><span> </span
+              ><span>Company</span><span> - </span
+              ><span>All Rights Reserved.</span>
+            </p>
+            <dl class="contact-list">
+              <dt>Email:</dt>
+              <dd><a href="mailto:#">company@email.com</a></dd>
+            </dl>
+          </div>
+  
+          <div class="box-3">
+            <ul class="nav-list">
+              <li><a href="#">Home</a></li>
+              <li><a href="store.html">Store</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Sign Up</a></li>
+            </ul>
+          </div>
+          <div class="box-4">
+            <ul class="social_footer_ul">
+              <li>
+                <a href="http://webenlance.com"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="http://webenlance.com"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="http://webenlance.com"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a href="http://webenlance.com"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+  </body>
+</html>
