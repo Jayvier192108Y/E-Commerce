@@ -28,6 +28,7 @@ body {
   width: 100%;
   margin: 0;
   display: table;
+  background-color: rgb(187, 175, 163);
 }
 
 .nav ul {
@@ -82,7 +83,7 @@ body {
 }
 /*chatbot*/
 .chat-btn {
-  display: block;
+  display: inline;
   width: 50px;
   height: 50px;
   color: #222627;
@@ -178,16 +179,18 @@ body {
 
 .shop-item-title {
   display: block;
-  width: 100%;
+  width: 90%;
   text-align: center;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 20px;
   color: #333;
   margin-bottom: 15px;
 }
 
 .shop-item-image {
-  height: 250px;
+  min-width: 150px;
+  max-width: 250px;
+  max-height: 300px;
 }
 
 .shop-item-details {
@@ -199,6 +202,8 @@ body {
 .shop-item-price {
   flex-grow: 1;
   color: #333;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .shop-items {
@@ -234,6 +239,7 @@ body {
   width: 20%;
   font-size: 1.2em;
   color: #333;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .cart-quantity {
@@ -288,7 +294,8 @@ body {
 
 .cart-total-price {
   color: #333;
-  font-size: 1.1em;
+  font-size: 23px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 /*Footer*/

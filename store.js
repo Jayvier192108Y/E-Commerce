@@ -101,12 +101,11 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
 }
-
 var a;
 function show_hide()
 {
     if (a==1){
-        document.getElementById("dialogflow").style.display='inline';
+        document.getElementById("dialogflow").style.display='block';
         return a=0;
     }
     else{
@@ -114,3 +113,4 @@ function show_hide()
         return a=1;
     }
 } 
+
