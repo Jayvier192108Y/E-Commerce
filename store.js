@@ -101,3 +101,16 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
 }
+
+var a;
+function show_hide()
+{
+    if (a==1){
+        document.getElementById("dialogflow").style.display='inline';
+        return a=0;
+    }
+    else{
+        document.getElementById("dialogflow").style.display='none';
+        return a=1;
+    }
+} 

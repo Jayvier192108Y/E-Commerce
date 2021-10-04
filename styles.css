@@ -80,6 +80,22 @@ body {
     justify-content: space-around;
   }
 }
+/*chatbot*/
+.chat-btn {
+  display: block;
+  width: 50px;
+  height: 50px;
+  color: #222627;
+  background-color: #199af0;
+  border-radius: 10px;
+  position: relative;
+}
+.chat-btn:hover {
+  background-color: rgb(53, 44, 32);
+  color: rgb(230, 222, 222);
+  cursor: pointer;
+  transition: all 0.4s;
+}
 /*Button*/
 .btn-primary {
   display: block;
